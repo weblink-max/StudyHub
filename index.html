@@ -1,0 +1,64 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>proto-type</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="manifest" href="/manifest.json">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=book,docs,home_app_logo,lightbulb,music_note,person,quiz,rule" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  </style>
+</head>
+<body>
+  <div id="contextMenu" class="widget contextMenu">
+    <p><a href="#" class="contextMenuLink" data-action="read">Listen</a></p>
+    <p data-action="define">Define</p>
+    <p><a href="#" class="contextMenuLink" data-action="search">Search</a></p>
+    <p><a href="#" class="contextMenuLink" data-action="copy">Copy</a></p>
+  </div>
+  
+  <div class="container">
+    <div class="header">
+      <div>
+        <h1>Study Hub</h1>
+      </div>
+      <div id="profile" class="hover" onclick="setActive(document.querySelector('#home'),'profile')">
+        <span class="material-symbols-outlined">person</span>
+    </div>
+  </div>
+    <div id="content"></div>
+    </div> 
+    
+    <div class="nav">
+    <ul>
+        <li id="marks" onclick="setActive(this,'marks')">
+            <span class="material-symbols-outlined">rule</span>
+            <p>Marks</p>
+        </li>
+        <li id="doubt" onclick="setActive(this,'doubt')">
+            <span class="material-symbols-outlined">lightbulb</span>
+            <p>Doubt</p>
+        </li>
+        <li id="home" class="active" onclick="setActive(this,'home')">
+            <span class="material-symbols-outlined">home_app_logo</span>
+            <p>Home</p>
+        </li>
+        <li id="mockTest" onclick="setActive(this,'mockTest')">
+            <span class="material-symbols-outlined">quiz</span>
+            <p>Mock Test</p>
+        </li>
+        <li id="music" onclick="setActive(this,'music')">
+            <span class="material-symbols-outlined">music_note</span>
+            <p>Music</p>
+        </li>
+    </ul>
+    <div class="indicator"></div>
+</div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
